@@ -1,0 +1,117 @@
+= 高架下のRuby
+
+: subtitle
+   Railsのない生活
+: author
+   @myokoym
+: institution
+   Ruby-GNOME2 Project Team
+: content-source
+   札幌市中央区Ruby会議01
+: date
+   2014/02/08
+: allotted-time
+   20m
+: theme
+   lightning-clear-blue
+
+= 自己紹介
+
+  * Rubyist
+    * Rabbitショッカー
+    * Ruby-GNOME2プロジェクト
+    * Ruby札幌
+    * Sinatra札幌
+  * 将棋指し（アマ三段）
+
+= 話すこと
+
+  * Railsを使う機会がなくても、
+  * Rubyを活用できるということ
+
+= 例えば
+
+  * コマンドラインツール
+  * Webページ作成ツール
+  * GUIアプリケーション
+
+= コマンドラインツール
+
+  * 自動化しやすい
+  * 気軽に書ける
+    * UIを作成しなくていい
+
+= コマンドラインツール
+
+  * 多くのOSで同じコードが動く
+    * シェルスクリプトやバッチファイルの\n代わりとして使える
+
+= コマンドラインツール
+
+  * 既存のツールを使いたい
+    * RubyGems.org
+  * 自作のツールを公開したい
+    * RubyGems.org
+
+= Webページ作成ツール
+
+  * 楽にHTMLやCSSを書ける
+    * 静的Webサイトジェネレーター
+
+= Webページ作成ツール
+
+  * Jekyll
+  * Middleman
+    * ERB, Haml
+    * Sass, SCSS
+    * Sinatra, Padrino
+
+= GUIアプリケーション
+
+  * ちょっとしたツールのUIとして
+    * ブラウザは多くのメモリが必要
+    * Webアプリはサーバーに依存する
+
+= GUIアプリケーション
+
+  * リッチなUIを作成できる
+    * 自由度が高い
+    * JavaScriptを書かなくてよい
+
+= GUIアプリ用ライブラリ
+
+  * Ruby標準添付
+    * Ruby/Tk
+  * GNOME開発環境（GTK+ 等）
+    * Ruby-GNOME2（Ruby/GTK）
+  * ゲーム製作に特化
+    * Ruby/SDL、Gosuなど
+
+= デモ
+
+= コマンドラインツール
+
+== プロパティ
+
+: as_large_as_possible
+   false
+
+= Webページ作成ツール
+
+== プロパティ
+
+: as_large_as_possible
+   false
+
+= GUIアプリケーション
+
+== プロパティ
+
+: as_large_as_possible
+   false
+
+= おわりに
+
+  # blockquote
+  Rubyは汎用プログラミング言語です。Webに限らず、
+  いろいろな場所で活用してみてください。
