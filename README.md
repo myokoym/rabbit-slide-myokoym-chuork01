@@ -22,3 +22,7 @@ Railsのない生活。
 
     rabbit rabbit-slide-myokoym-chuork01.gem
 
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/myokoym/rabbit-slide-myokoym-chuork01/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
