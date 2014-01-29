@@ -1,7 +1,9 @@
 ---
 id: chuork01
 base_name: ruby-below-rails
-tags: []
+tags:
+- rabbit
+- chuork01
 presentation_date: 2014/02/08
 version: 2014.2.8.0
 licenses: []
