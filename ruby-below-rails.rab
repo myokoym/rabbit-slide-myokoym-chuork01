@@ -3,7 +3,7 @@
 : subtitle
    Railsのない生活
 : author
-   @myokoym
+   横山昌史@myokoym
 : institution
    Ruby-GNOME2 Project Team
 : content-source
@@ -13,14 +13,14 @@
 : allotted-time
    20m
 : theme
-   lightning-clear-blue
+   nyankosakana
 
 = 自己紹介
 
   * Rubyist
     * Rabbitショッカー
     * Ruby-GNOME2プロジェクト
-    * Ruby札幌 (Ruby Kaja 2013)
+    * Ruby札幌 (('tag:italic:(Ruby Kaja 2013)'))
     * Sinatra札幌
   * 将棋指し（アマ三段）
 
@@ -39,10 +39,15 @@
 = 高架下
 
   (1) コマンドラインツール
-  (2) Webページ作成ツール
+  (2) 静的Webサイト作成ツール
   (3) GUIアプリケーション
 
 = 1.
+
+== プロパティ
+
+:as_large_as_possible
+  true
 
 = コマンドラインツール
 
@@ -66,11 +71,11 @@
 
 = コマンドラインツールの例
 
-  * ファイル名を変更
-  * ディレクトリを圧縮
-  * 画像サイズを変更
+  * ファイル名を一括変更
+  * ディレクトリごとに圧縮
+  * 画像サイズを一括変更
 
-= ファイル名を変更
+= ファイル名を一括変更
 
   # coderay ruby
   require "fileutils"
@@ -80,7 +85,7 @@
                  file.gsub(/a/, "b"))
   end
 
-= ディレクトリを圧縮
+= ディレクトリごとに圧縮
 
   * ライブラリ（Ruby/zlibなど）
   * 外部コマンド（7-Zipなど）
@@ -90,7 +95,7 @@
     system("7z", "a", "#{dir}.zip", dir)
   end
 
-= 画像サイズを変更
+= 画像サイズを一括変更
 
 pix_scale（拙作）
 
@@ -102,16 +107,22 @@ pix_scale（拙作）
   $ ls
   a.png a-0.5.png b.png b-0.5.png
 
+(('tag:right'))
 (('note:https://github.com/myokoym/pix_scale'))
 
 = 2.
 
-= Webページ作成ツール
+== プロパティ
+
+:as_large_as_possible
+  true
+
+= 静的Webサイト作成ツール
 
   * 楽にHTMLやCSSを書ける
-    * 静的Webサイトジェネレーター
+  * Rubyはテンプレートやテストサーバーとして暗躍
 
-= Webページ作成ツール
+= 静的Webサイト作成ツール
 
   * Jekyll
   * Middleman
@@ -119,7 +130,24 @@ pix_scale（拙作）
     * Sass, SCSS
     * Sinatra, Padrino
 
+= Middleman製
+
+  # image
+  # src = chuork01-ss.png
+  # relative_height = 100
+  # reflect_ratio = 0.1
+
+== プロパティ
+
+:enable-title-on-image
+  true
+
 = 3.
+
+== プロパティ
+
+:as_large_as_possible
+  true
 
 = GUIアプリケーション
 
@@ -148,6 +176,8 @@ pix_scale（拙作）
   Ruby-GNOME2はGNOMEで使用されるGTK+などの主要なライブラリの
   Rubyバインディング集です。
 
+  (('note:http://blade.nagaokaut.ac.jp/cgi-bin/scat.rb/ruby/ruby-list/49734'))
+
 = Ruby-GNOME2とは
 
   # blockquote
@@ -155,9 +185,11 @@ pix_scale（拙作）
   ルチプラットフォーム対応のGUIアプリケーションをRubyで書くこ
   とができます。
 
+  (('note:http://blade.nagaokaut.ac.jp/cgi-bin/scat.rb/ruby/ruby-list/49734'))
+
 = なぜRuby-GNOME2か
 
-  * なんとなく好みだから
+  * 自分が楽しくプログラミングできるから
 
 = なぜRuby-GNOME2か
 
@@ -171,7 +203,7 @@ pix_scale（拙作）
   # blockquote
   Ruby言語の持つ様々な特徴(例外処理やブロックの使用)をうまく取り入れることでRubyとの親和性が極めて高い．
 
-(('note:http://ruby-gnome2.sourceforge.jp/ja/hiki.cgi?gtk2-tut-introduction'))
+  (('note:http://ruby-gnome2.sourceforge.jp/ja/hiki.cgi?gtk2-tut-introduction'))
 
 = 拡張ライブラリがたくさん
 
@@ -193,11 +225,12 @@ pix_scale（拙作）
     * ruby-gnome2-devel-ja
     * 日本語で質問できます！
 
-= もう少し詳しく
+= あと何分？
+
+= バージョンについて
 
   * Ruby/GTK2
   * Ruby/GTK3
-  * Hello, World!
 
 = Ruby/GTK2
 
@@ -228,10 +261,8 @@ GTK+ 3のRubyバインディング
   window.signal_connect("destroy") do
     Gtk.main_quit
   end
-
   label = Gtk::Label.new("Hello, World!")
   window.add(label)
-
   window.show_all
   Gtk.main
 
@@ -268,24 +299,18 @@ GTK+ 3のRubyバインディング
   label = Gtk::Label.new("Hello, World!")
   window.add(label)
 
-= 表示
+= 表示＆メインループ
 
-  * showやshow_allを呼ぶと、ディスプレイに表示される
+  * showやshow_allで画面に表示
+  * Gtk.mainでメインループに突入
 
   # coderay ruby
   window.show_all
-
-= メインループ
-
-  * イベントを待ち受ける状態
-
-  # coderay ruby
   Gtk.main
 
 = おわりに
 
-  # blockquote
-  Rubyは汎用プログラミング言語です。Webに限らず、
-  いろいろな場所で活用してみてください。
+Rubyは汎用プログラミング言語です。Webに限らず、
+いろいろな場所で活用してみてください。
 
-(('note:GUIアプリケーションに興味があり、勉強会があった方が捗るという方がいれば、お声掛けくださいませ。'))
+(('note:GUIアプリケーションの勉強会を検討中なので、興味がある方がいればお知らせくださいませ :-)'))
