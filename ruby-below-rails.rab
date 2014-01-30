@@ -193,6 +193,95 @@ pix_scale（拙作）
     * ruby-gnome2-devel-ja
     * 日本語で質問できます！
 
+= もう少し詳しく
+
+  * Ruby/GTK2
+  * Ruby/GTK3
+  * Hello, World!
+
+= Ruby/GTK2
+
+GTK+ 2のRubyバインディング
+
+  * 旧バージョン
+    * GTK+ 2の開発はほぼ終了
+  * 採用実績が多く、安定性は高い
+    * プレゼンツール（Rabbit）
+    * Twitterクライアント（mikutter）
+
+= Ruby/GTK3
+
+GTK+ 3のRubyバインディング
+
+  * 最新バージョン
+    * 機能向上（CSS対応の強化など）
+    * 移行が推奨されている
+  * 採用実績
+    * ファイルビューア（Mireru）
+
+= Hello, World!
+
+  # coderay ruby
+  require "gtk3"
+
+  window = Gtk::Window.new
+  window.signal_connect("destroy") do
+    Gtk.main_quit
+  end
+
+  label = Gtk::Label.new("Hello, World!")
+  window.add(label)
+
+  window.show_all
+  Gtk.main
+
+= 準備
+
+  * gtk2またはgtk3をrequireする
+
+  # coderay ruby
+  require "gtk3"
+
+= メインウィンドウ作成
+
+  * ここにウィジェットを追加する
+
+  # coderay ruby
+
+  window = Gtk::Window.new
+
+= イベント取得
+
+  * 既定のイベントが発生すると、ブロック内の処理が実行される
+
+  # coderay ruby
+  window.signal_connect("destroy") do
+    Gtk.main_quit
+  end
+
+= ウィジェット追加
+
+  * ウィジェットによっては、子ウィジェットを追加できる
+
+  # coderay ruby
+
+  label = Gtk::Label.new("Hello, World!")
+  window.add(label)
+
+= 表示
+
+  * showやshow_allを呼ぶと、ディスプレイに表示される
+
+  # coderay ruby
+  window.show_all
+
+= メインループ
+
+  * イベントを待ち受ける状態
+
+  # coderay ruby
+  Gtk.main
+
 = おわりに
 
   # blockquote
