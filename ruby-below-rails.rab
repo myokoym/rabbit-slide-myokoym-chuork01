@@ -72,7 +72,7 @@
 = コマンドラインツールの例
 
   * ファイル名を一括変更
-  * ディレクトリごとに圧縮
+  * ファイルごとに圧縮
   * 画像サイズを一括変更
 
 = ファイル名を一括変更
@@ -80,19 +80,19 @@
   # coderay ruby
   require "fileutils"
 
-  Dir.glob("*") do |file|
-    FileUtils.mv(file,
-                 file.gsub(/a/, "b"))
+  Dir.glob("A*") do |name|
+    FileUtils.mv(name,
+                 name.gsub(/^A/, "B"))
   end
 
-= ディレクトリごとに圧縮
+= ファイルごとに圧縮
 
   * ライブラリ（Ruby/zlibなど）
   * 外部コマンド（7-Zipなど）
 
   # coderay ruby
-  Dir.glob("*") do |dir|
-    system("7z", "a", "#{dir}.zip", dir)
+  Dir.glob("B*") do |name|
+    system("7z", "a", "#{name}.zip", name)
   end
 
 = 画像サイズを一括変更
@@ -100,9 +100,9 @@
 pix_scale（拙作）
 
   # coderay bash
+  $ gem install pix_scale
   $ ls
   a.png b.png
-  $ gem install pix_scale
   $ pix_scale *.png 0.5
   $ ls
   a.png a-0.5.png b.png b-0.5.png
@@ -119,8 +119,8 @@ pix_scale（拙作）
 
 = 静的Webサイト作成ツール
 
-  * 楽にHTMLやCSSを書ける
-  * Rubyはテンプレートやテストサーバーとして暗躍
+  * 最終的にHTMLやCSSを出力する
+  * Rubyはテンプレートやテストツールなどとして暗躍
 
 = 静的Webサイト作成ツール
 
