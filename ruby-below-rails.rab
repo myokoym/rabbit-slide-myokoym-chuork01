@@ -11,7 +11,7 @@
 : date
    2014/02/08
 : allotted-time
-   20m
+   23m
 : theme
    nyankosakana
 
@@ -80,9 +80,10 @@
   # coderay ruby
   require "fileutils"
 
-  Dir.glob("A*") do |name|
+  Dir.glob("*") do |name|
+    next unless /\Asl.*\.txt\z/ =~ name
     FileUtils.mv(name,
-                 name.gsub(/^A/, "B"))
+                 name.sub(/\Asl/, "ls"))
   end
 
 = ファイルごとに圧縮
@@ -91,7 +92,7 @@
   * 外部コマンド（7-Zipなど）
 
   # coderay ruby
-  Dir.glob("B*") do |name|
+  Dir.glob("*.log") do |name|
     system("7z", "a", "#{name}.zip", name)
   end
 
@@ -119,16 +120,21 @@ pix_scale（拙作）
 
 = 静的Webサイト作成ツール
 
-  * 最終的にHTMLやCSSを出力する
-  * Rubyはテンプレートやテストツールなどとして暗躍
+  * ローカルでHTMLやCSSを生成
+    * SinatraやRailsとは違う
+  * Rubyは補助ツールとして暗躍
+    * HTMLを直接書かなくていい
+    * テンプレートとデータの分離
 
 = 静的Webサイト作成ツール
 
-  * Jekyll
-  * Middleman
-    * ERB, Haml
-    * Sass, SCSS
-    * Sinatra, Padrino
+  * 有名なのはJekyll
+  * 最近はMiddlemanが流行
+    * 様々な記法を選べる
+      * ERB, Haml, Slim, Markdown, Sass, SCSS
+    * アセットパイプライン
+      * Sprockets, Compass
+    * Padrinoのヘルパーを使える
 
 = Middleman製
 
@@ -159,7 +165,7 @@ pix_scale（拙作）
 
   * リッチなUIを作成できる
     * 自由度が高い
-    * JavaScriptを書かなくてよい
+    * JavaScriptを書かなくていい
 
 = GUIアプリ用ライブラリ
 
