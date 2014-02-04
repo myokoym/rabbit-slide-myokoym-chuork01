@@ -1,7 +1,7 @@
 = 高架下のRuby
 
-: subtitle
-   Railsのない生活
+#: subtitle
+#   Railsのない生活
 : author
    横山昌史@myokoym
 : institution
@@ -24,22 +24,37 @@
     * Sinatra札幌
   * 将棋指し（アマ三段）
 
+= はじめに
+
+= 高架下とは？
+
+= ((*高架橋*))の下
+
+= ((*高架橋*))とは
+
+  # image
+  # src = rail.jpg
+  # relative_height = 75
+
+(('tag:center'))
+(('tag:large'))
+((*↑これ*))
+
+= 高架下とは
+
+(('tag:center'))
+(('tag:x-large'))
+Not on Rails
+
 = 話すこと
 
   * Railsを使う機会がなくても、
   * Rubyを活用できるということ
 
-= Ruby on Rails
-
-  * 巨人
-  * ひとりでは戦えない
-  * チームで挑むべき
-    * 学習も開発も
-
-= 高架下
+= 話すこと
 
   (1) コマンドラインツール
-  (2) 静的Webサイト作成ツール
+  (2) Webサイト作成ツール
   (3) GUIアプリケーション
 
 = 1.
@@ -47,6 +62,18 @@
 == プロパティ
 
 :as_large_as_possible
+  true
+
+= コマンドラインツール
+
+  # image
+  # src = terminal_on_windows.png
+  # relative_height = 90
+  # reflect_ratio = 0.1
+
+== プロパティ
+
+:enable-title-on-image
   true
 
 = コマンドラインツール
@@ -118,7 +145,19 @@ pix_scale（拙作）
 :as_large_as_possible
   true
 
-= 静的Webサイト作成ツール
+= Webサイト作成ツール
+
+  # image
+  # src = middleman_top.png
+  # relative_height = 100
+  # reflect_ratio = 0.1
+
+== プロパティ
+
+:enable-title-on-image
+  true
+
+= Webサイト作成ツール
 
   * ローカルでHTMLやCSSを生成
     * SinatraやRailsとは違う
@@ -126,7 +165,7 @@ pix_scale（拙作）
     * HTMLを直接書かなくていい
     * テンプレートとデータの分離
 
-= 静的Webサイト作成ツール
+= Webサイト作成ツール
 
   * 有名なのはJekyll
   * 最近はMiddlemanが流行
@@ -153,6 +192,18 @@ pix_scale（拙作）
 == プロパティ
 
 :as_large_as_possible
+  true
+
+= GUIアプリケーション
+
+  # image
+  # src = FootFall.png
+  # relative_height = 100
+  # reflect_ratio = 0.1
+
+== プロパティ
+
+:enable-title-on-image
   true
 
 = GUIアプリケーション
