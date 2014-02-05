@@ -3,9 +3,9 @@
 #: subtitle
 #   Railsのない生活
 : author
-   横山昌史@myokoym
-: institution
-   Ruby-GNOME2 Project Team
+   横山昌史
+#: institution
+#   Ruby-GNOME2 Project Team
 : content-source
    札幌市中央区Ruby会議01
 : date
@@ -13,13 +13,26 @@
 : allotted-time
    23m
 : theme
-   nyankosakana
+   .
+
+= 自己紹介
+
+    # image
+    # src = my_icon.png
+    # relative_width = 20
+    # align = right
+    # relative_argin_right = -10
+
+  * よこやままさふみ
+  * @myokoym
+    * 由来：((*m*)). ((*yokoy*))a((*m*))a
+    * 発音：myokoyamaa
 
 = 自己紹介
 
   * Rubyist
     * Rabbitショッカー
-    * Ruby-GNOME2プロジェクト
+    * Ruby-GNOME2 Project Team
     * Ruby札幌 (('tag:italic:(Ruby Kaja 2013)'))
     * Sinatra札幌
   * 将棋指し（アマ三段）
@@ -40,41 +53,34 @@
 (('tag:large'))
 ((*↑これ*))
 
-= 高架下とは
+= 私
 
-(('tag:center'))
-(('tag:x-large'))
-Not on Rails
+  * 高架下の住人
+    * （Railsを使っていない）
 
-= 話すこと
+= 話したいこと
 
   * Railsを使う機会がなくても、
   * Rubyを活用できるということ
 
 = 話すこと
 
-  (1) コマンドラインツール
-  (2) Webサイト作成ツール
-  (3) GUIアプリケーション
+  * コマンドラインツール
+  * Webサイト作成ツール
+  * デスクトップアプリケーション
 
-= 1.
+= 話すこと
 
-== プロパティ
+  * ((*コマンドラインツール*))
+  * Webサイト作成ツール
+  * デスクトップアプリケーション
 
-:as_large_as_possible
-  true
-
-= コマンドラインツール
+= コマンドライン
 
   # image
   # src = terminal_on_windows.png
   # relative_height = 90
   # reflect_ratio = 0.1
-
-== プロパティ
-
-:enable-title-on-image
-  true
 
 = コマンドラインツール
 
@@ -138,32 +144,19 @@ pix_scale（拙作）
 (('tag:right'))
 (('note:https://github.com/myokoym/pix_scale'))
 
-= 2.
+= 話すこと
 
-== プロパティ
-
-:as_large_as_possible
-  true
-
-= Webサイト作成ツール
-
-  # image
-  # src = middleman_top.png
-  # relative_height = 100
-  # reflect_ratio = 0.1
-
-== プロパティ
-
-:enable-title-on-image
-  true
+  * (('del:コマンドラインツール'))
+  * ((*Webサイト作成ツール*))
+  * デスクトップアプリケーション
 
 = Webサイト作成ツール
 
   * ローカルでHTMLやCSSを生成
     * SinatraやRailsとは違う
   * Rubyは補助ツールとして暗躍
-    * HTMLを直接書かなくていい
-    * テンプレートとデータの分離
+    * 簡易記法をHTMLやCSSに変換
+    * テンプレートとデータの結合
 
 = Webサイト作成ツール
 
@@ -174,6 +167,13 @@ pix_scale（拙作）
     * アセットパイプライン
       * Sprockets, Compass
     * Padrinoのヘルパーを使える
+
+= Middleman
+
+  # image
+  # src = middleman_top.png
+  # relative_height = 100
+  # reflect_ratio = 0.1
 
 = Middleman製
 
@@ -187,45 +187,95 @@ pix_scale（拙作）
 :enable-title-on-image
   true
 
-= 3.
+= 話すこと
 
-== プロパティ
+  * (('del:コマンドラインツール'))
+  * (('del:Webサイト作成ツール'))
+  * ((*デスクトップアプリケーション*))
 
-:as_large_as_possible
-  true
+= デスクトップアプリとは
 
-= GUIアプリケーション
+  * デスクトップ環境で動作するアプリケーション
+    * PCにインストールして使うもの
+  * GUIツールキットを使って作成する
+    * GUIアプリケーションとも呼ばれる
 
-  # image
-  # src = FootFall.png
-  # relative_height = 100
-  # reflect_ratio = 0.1
+= デスクトップアプリとは
 
-== プロパティ
-
-:enable-title-on-image
-  true
-
-= GUIアプリケーション
-
-  * ちょっとしたツールのUIとして
-    * ブラウザは多くのメモリが必要
-    * Webアプリはサーバーに依存する
+  * デスクトップ環境で動作するアプリケーション
+    * PCにインストールして使うもの
+  * GUIツールキットを使って作成する
+    * ((*GUIアプリケーション*))とも呼ばれる
 
 = GUIアプリケーション
 
-  * リッチなUIを作成できる
+  * 広義
+    * ボタンやテキストボックスなどで操作するアプリケーション
+  * 狭義
+    * デスクトップアプリケーション
+
+= デスクトップアプリとは
+
+  * デスクトップ環境で動作するアプリケーション
+    * PCにインストールして使うもの
+  * ((*GUIツールキット*))を使って作成する
+    * GUIアプリケーションとも呼ばれる
+
+= GUIツールキット
+
+  * GUIアプリケーションを構成する部品の集まり
+  * 一からウィンドウを作成
     * 自由度が高い
     * JavaScriptを書かなくていい
 
-= GUIアプリ用ライブラリ
+= GUIツールキットの例
+
+  * マルチプラットフォーム
+    * GTK+, Qt, Tk
+  * Mac OS X
+    * Cocoa
+  * Windows
+    * .NET Framework
+
+= Ruby × GUI
 
   * Ruby標準添付
     * Ruby/Tk
   * GNOME開発環境（GTK+ 等）
     * Ruby-GNOME2（Ruby/GTK）
-  * ゲーム製作に特化
-    * Ruby/SDL、Gosuなど
+
+etc...
+
+= Ruby × GUI
+
+  * Ruby標準添付
+    * Ruby/Tk
+  * GNOME開発環境（GTK+ 等）
+    * ((*Ruby-GNOME2（Ruby/GTK）*))
+
+etc...
+
+= GNOMEとは
+
+    # image
+    # src = Gnomelogo.svg
+    # relative_width = 20
+    # align = right
+
+  * デスクトップ環境
+    * Debian GNU/Linux
+    * Fedora
+    * CentOS
+    * （Ubuntu）
+
+= デスクトップ環境
+
+  * Linux
+    * GNOME, KDE, Xfce, Unityなど
+  * Mac OS X
+    * Aqua
+  * Windows7
+    * Aero
 
 = Ruby-GNOME2とは
 
@@ -246,9 +296,14 @@ pix_scale（拙作）
 
 = なぜRuby-GNOME2か
 
-  * （自分が）楽しくプログラミングできるから
+  # image
+  # src = logo-gy.svg
+  # relative_height = 60
 
-= なぜRuby-GNOME2か
+(('tag:center'))
+楽しくプログラミングできる
+
+= なぜ楽しいのか
 
   * Rubyらしく書ける
   * 拡張ライブラリがたくさん
@@ -286,6 +341,11 @@ pix_scale（拙作）
 = あと何分？
 
 = バージョンについて
+
+    # image
+    # src = GTK.png
+    # relative_width = 30
+    # align = right
 
   * Ruby/GTK2
   * Ruby/GTK3
@@ -360,4 +420,4 @@ GTK+ 3のRubyバインディング
 Rubyは汎用プログラミング言語です。Webに限らず、
 いろいろな場所で活用してみてください。
 
-(('note:GUIアプリケーションの勉強会を検討中なので、興味がある方がいればお知らせくださいませ :-)'))
+(('note:デスクトップアプリケーションの勉強会を検討中なので、興味がある方がいればお知らせくださいませ :-)'))
