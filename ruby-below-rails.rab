@@ -18,7 +18,7 @@
 = 自己紹介
 
     # image
-    # src = my_icon.png
+    # src = my-icon.png
     # relative_width = 20
     # align = right
     # relative_argin_right = -10
@@ -78,7 +78,7 @@
 = コマンドライン
 
   # image
-  # src = terminal_on_windows.png
+  # src = terminal-on-windows.png
   # relative_height = 90
   # reflect_ratio = 0.1
 
@@ -106,7 +106,6 @@
 
   * ファイル名を一括変更
   * ファイルごとに圧縮
-  * 画像サイズを一括変更
 
 = ファイル名を一括変更
 
@@ -121,28 +120,13 @@
 
 = ファイルごとに圧縮
 
-  * ライブラリ（Ruby/zlibなど）
-  * 外部コマンド（7-Zipなど）
+  * 外部コマンドを使う場合
+    * 7-Zipなどはコマンドラインで使える
 
   # coderay ruby
   Dir.glob("*.log") do |name|
     system("7z", "a", "#{name}.zip", name)
   end
-
-= 画像サイズを一括変更
-
-pix_scale（拙作）
-
-  # coderay bash
-  $ gem install pix_scale
-  $ ls
-  a.png b.png
-  $ pix_scale *.png 0.5
-  $ ls
-  a.png a-0.5.png b.png b-0.5.png
-
-(('tag:right'))
-(('note:https://github.com/myokoym/pix_scale'))
 
 = 話すこと
 
@@ -171,7 +155,7 @@ pix_scale（拙作）
 = Middleman
 
   # image
-  # src = middleman_top.png
+  # src = middleman-top.png
   # relative_height = 100
   # reflect_ratio = 0.1
 
@@ -199,13 +183,6 @@ pix_scale（拙作）
     * PCにインストールして使うもの
   * GUIツールキットを使って作成する
     * GUIアプリケーションとも呼ばれる
-
-= デスクトップアプリとは
-
-  * デスクトップ環境で動作するアプリケーション
-    * PCにインストールして使うもの
-  * GUIツールキットを使って作成する
-    * ((*GUIアプリケーション*))とも呼ばれる
 
 = GUIアプリケーション
 
@@ -243,15 +220,6 @@ pix_scale（拙作）
     * Ruby/Tk
   * GNOME開発環境（GTK+ 等）
     * Ruby-GNOME2（Ruby/GTK）
-
-etc...
-
-= Ruby × GUI
-
-  * Ruby標準添付
-    * Ruby/Tk
-  * GNOME開発環境（GTK+ 等）
-    * ((*Ruby-GNOME2（Ruby/GTK）*))
 
 etc...
 
@@ -300,8 +268,7 @@ etc...
   # src = logo-gy.svg
   # relative_height = 60
 
-(('tag:center'))
-楽しくプログラミングできる
+* 楽しくプログラミングできる
 
 = なぜ楽しいのか
 
