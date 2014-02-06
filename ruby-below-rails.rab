@@ -485,6 +485,7 @@ GTK+ 3のRubyバインディング
 
   # image
   # src = hello-gui.png
+  # relative_width = 35
 
 = おわりに
 
