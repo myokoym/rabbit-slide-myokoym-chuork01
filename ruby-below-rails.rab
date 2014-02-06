@@ -25,7 +25,7 @@
 
   * よこやままさふみ
   * @myokoym
-    * 由来：((*m*)). ((*yokoy*))a((*m*))a
+    * 由来：((*m*)).((*yokoy*))a((*m*))a
     * 発音例：myokoyamaa
 
 = 自己紹介
@@ -169,7 +169,7 @@
       # coderay bash
       $ ruby hello.rb
 
-= マルチバイト文字を扱う場合
+= マルチバイト文字
 
   # coderay ruby
   #!/usr/bin/env ruby
@@ -193,10 +193,10 @@
     * Rubyが動けばOK
     * 環境の差は（ほぼ）Rubyが吸収
 
-= コマンドラインの活用例
+= 実用例
 
-  * ファイル名を一気に変更
-  * ファイルごとに分けて圧縮
+  * ファイル名を一括変更
+  * ファイルごとに圧縮
 
 = ファイル名を一括変更
 
@@ -247,7 +247,7 @@
 
   # image
   # src = middleman-top.png
-  # relative_height = 100
+  # relative_height = 98
   # reflect_ratio = 0.1
 
 = Middleman製
@@ -272,7 +272,7 @@
 
   * デスクトップ環境で動作するアプリケーション
     * PCにインストールして使うもの
-  * GUIツールキットを使って作成する
+  * GUIツールキットを使って作る
     * GUIアプリケーションとも呼ばれる
 
 = GUIアプリケーション
@@ -380,8 +380,8 @@ etc...
 
 = GitHubでオープンソース
 
-(('tag:center'))
-(('note:https://github.com/ruby-gnome2/ruby-gnome2'))
+  * https://github.com/
+    * ruby-gnome2/ruby-gnome2
 
 = 日本人開発者が多い
 
@@ -423,12 +423,13 @@ GTK+ 3のRubyバインディング
   * 採用実績
     * Mireru（ファイルビューア）
 
-= 小さなサンプル
+= Hello, GUI!
 
   # coderay ruby
   require "gtk3"
 
   window = Gtk::Window.new
+  window.title = "Hello, GUI!"
   window.signal_connect("destroy") do
     Gtk.main_quit
   end
@@ -442,7 +443,7 @@ GTK+ 3のRubyバインディング
   # coderay ruby
   gem install gtk3
 
-連絡先\n
+(('note:連絡先:'))\n
 (('note:https://github.com/ruby-gnome2/ruby-gnome2/issues'))\n
 (('note:https://lists.sourceforge.net/lists/listinfo/ruby-gnome2-devel-ja'))
 
@@ -460,6 +461,7 @@ GTK+ 3のRubyバインディング
   # coderay ruby
 
   window = Gtk::Window.new
+  window.title = "Hello, GUI!"
 
 = イベント取得
 
@@ -478,6 +480,11 @@ GTK+ 3のRubyバインディング
   # coderay ruby
   window.show_all
   Gtk.main
+
+= Hello, GUI!
+
+  # image
+  # src = hello-gui.png
 
 = おわりに
 
