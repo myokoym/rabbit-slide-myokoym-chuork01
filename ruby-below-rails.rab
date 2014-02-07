@@ -23,18 +23,10 @@
     # align = right
     # relative_argin_right = -10
 
-  * よこやままさふみ
-  * @myokoym
+  * @myokoym (GitHub, Twitter)
     * 由来：((*m*)).((*yokoy*))a((*m*))a
     * 発音例：myokoyamaa
-
-= 自己紹介
-
-  * Rubyist
-    * Rabbitショッカー
-    * Ruby-GNOME2 Project Team
-    * Ruby札幌 (('tag:italic:(Ruby Kaja 2013)'))
-    * Sinatra札幌
+  * ソフトウェア開発者
   * 将棋指し（アマ三段）
 
 = 札幌の将棋事情
@@ -62,24 +54,30 @@
 (('tag:large'))
 ((*↑これ*))
 
-= 私
+= 私（達）
 
-  * 高架下の住人
-    * Railsを使っていない
-    * Rubyは使っている
+  * Railsを使っていない
+    * 高架下の住人
 
-= たまに見かける等式
+= たまに見かける仮説
 
 (('tag:center'))
 (('tag:x-large'))
 (('tag:italic:Ruby ＝ Rails'))
 
-= 矛盾
+= 私（達）
 
   * Railsを使っていない
   * Rubyは使っている
 
-= 話したいこと
+= 論破
+
+== プロパティ
+
+:as-large-as-possible
+  true
+
+= お伝えしたいこと
 
   * Railsを使う機会がなくても、
   * Rubyを活用できるということ
@@ -108,25 +106,22 @@
   # coderay ruby
   puts "Hello, World!"
 
-= コマンドラインの利点
-
-  * UIを作成しなくていい
-    * 気軽に書ける
-    * Rubyだけで書ける
-  *一括処理や自動化しやすい
-  * シェルスクリプトの代替
-
-= シェルスクリプトの代替
-
-  * 違うOSで同じコードが動く
-    * Rubyが動けばOK
-    * 環境の差は（ほぼ）Rubyが吸収
-
 = 実行方法
 
-  * ワンライナー
   * irb
+  * ワンライナー
   * ファイルに保存して実行
+
+= irb
+
+  * 1行ずつ実行
+  * チュートリアル向き
+
+  # coderay bash
+  $ irb
+  irb(main):001:0> puts "Hello, World!"
+  Hello, World!
+  => nil
 
 = ワンライナー
 
@@ -149,47 +144,39 @@
   $ echo こんにちは | ruby -ple 'gsub(/[な-の]/, "ぬ")'
   こんぬちは
 
-= irb
-
-  * 1行ずつ実行
-  * チュートリアル向き
-
-  # coderay bash
-  $ irb
-  irb(main):001:0> puts "Hello, World!"
-  Hello, World!
-  => nil
+(('tag:center'))
+(('note:ヒント：るりまサーチ、コマンドライン'))
 
 = ファイルに保存して実行
 
-  * 1行目はShebang
+  * 1行目はshebang
 
   # coderay ruby
   #!/usr/bin/env ruby
 
   puts "Hello, World!"
 
-= Shebang
+= shebang
 
   * Unixのスクリプトの一行目の(('tag:italic:((*#!*))'))
     * インタプリタのパスを指定
-    * envを指定すると環境変数PATHを探す
-  * Shebangを書いて実行権限を付けると、コマンドがなくても実行できる
+    * envの場合、環境変数PATHを探す
+  * shebangを書いて実行権限を付けると、そのまま実行できる
   * 書かなくてもrubyコマンドで実行できる
 
 = ファイルに保存して実行
 
-  * Shebangを書いた人
+  * shebang書いた人
 
       # coderay bash
       $ ./hello.rb
 
-  * Shebangを書かかなかった人
+  * shebang書かかなかった人
 
       # coderay bash
       $ ruby hello.rb
 
-= 実用例
+= 実用ツールの例
 
   * ファイル名を一括変更
   * ファイルごとに圧縮
@@ -215,6 +202,32 @@
     system("7z", "a", "#{name}.zip", name)
   end
 
+= コマンドラインの利点
+
+  * UIを作成しなくていい
+    * 気軽に書ける
+    * Rubyだけで書ける
+  *一括処理や自動化しやすい
+  * シェルスクリプトの代替
+
+= シェルスクリプトの代替
+
+  * 違うOSで同じコードが動く
+    * Rubyが動けばOK
+    * 環境の差は（ほぼ）Rubyが吸収
+  * Rubyは常に成長している
+
+= Ruby :+1:
+
+  # image
+  # src = ruby.png
+  # relative_height = 100
+
+== プロパティ
+
+:enable-title-on-image
+  true
+
 = 話すこと
 
   * (('del:コマンドラインツール'))
@@ -227,13 +240,6 @@
   * GUIツールキットを使って作る
     * GUIアプリケーションとも呼ばれる
 
-= GUIアプリケーション
-
-  * 広義
-    * ボタンやテキストボックスなどで操作するアプリケーション
-  * 狭義
-    * デスクトップアプリケーション
-
 = GUIツールキット
 
   * GUIアプリケーションを構成する部品の集まり
@@ -243,7 +249,7 @@
 
 = GUIツールキットの例
 
-  * マルチプラットフォーム
+  * マルチプラットフォーム（C/C++）
     * GTK+, Qt, Tk
   * Mac OS X
     * Cocoa
