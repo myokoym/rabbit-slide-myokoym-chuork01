@@ -29,6 +29,13 @@
   * ソフトウェア開発者
   * 将棋指し（アマ三段）
 
+= Ruby Kaja 2013
+
+  # image
+  # src = ruby-kaja-2013.jpg
+  # relative_width = 80
+  # reflect_ratio = 0.1
+
 = 札幌の将棋事情
 
   * 北海道将棋会館
@@ -37,6 +44,8 @@
     * (('note:http://doshoren.blog.fc2.com/'))
   * 札幌将棋情報のブログ
     * (('note:http://blogs.yahoo.co.jp/sapporoshogijoho'))
+
+= ＼よろしくお願いします／\n\nm(_ _)m
 
 = はじめに
 
@@ -74,13 +83,14 @@
 
 == プロパティ
 
-:as-large-as-possible
-  true
+: as-large-as-possible
+   true
 
 = お伝えしたいこと
 
-  * Railsを使う機会がなくても、
-  * Rubyを活用できるということ
+(('tag:center'))
+Railsを使う機会がなくても、\n
+Rubyを活用できるということ
 
 = 話すこと
 
@@ -105,6 +115,21 @@
 
   # coderay ruby
   puts "Hello, World!"
+
+= コマンドラインの利点
+
+  * UIを作成しなくていい
+    * 気軽に書ける
+    * Rubyだけで書ける
+  * 一括処理や自動化しやすい
+  * シェルスクリプトの代替
+
+= シェルスクリプトの代替
+
+  * 違うOSで同じコードが動く
+    * Rubyが動けばOK
+    * 環境の差は（ほぼ）Rubyが吸収
+  * Rubyは常に変化している
 
 = 実行方法
 
@@ -145,7 +170,7 @@
   こんぬちは
 
 (('tag:center'))
-(('note:ヒント：るりまサーチ、コマンドライン'))
+(('note:ヒント：るりまサーチ、Rubyの起動'))
 
 = ファイルに保存して実行
 
@@ -202,31 +227,16 @@
     system("7z", "a", "#{name}.zip", name)
   end
 
-= コマンドラインの利点
-
-  * UIを作成しなくていい
-    * 気軽に書ける
-    * Rubyだけで書ける
-  *一括処理や自動化しやすい
-  * シェルスクリプトの代替
-
-= シェルスクリプトの代替
-
-  * 違うOSで同じコードが動く
-    * Rubyが動けばOK
-    * 環境の差は（ほぼ）Rubyが吸収
-  * Rubyは常に成長している
-
 = Ruby :+1:
 
   # image
   # src = ruby.png
-  # relative_height = 100
+  # relative_height = 80
 
 == プロパティ
 
-:enable-title-on-image
-  true
+: enable-title-on-image
+   true
 
 = 話すこと
 
@@ -444,6 +454,17 @@ GTK+ 3のRubyバインディング
   # image
   # src = hello-gui.png
   # relative_width = 35
+
+= Ruby :+1: :+1:
+
+  # image
+  # src = ruby.png
+  # relative_height = 90
+
+== プロパティ
+
+: enable-title-on-image
+   true
 
 = おわりに
 
