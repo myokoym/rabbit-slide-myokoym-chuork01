@@ -87,13 +87,11 @@
 = 話すこと
 
   * コマンドラインツール
-  * Webサイト作成ツール
   * デスクトップアプリケーション
 
 = 話すこと
 
   * ((*コマンドラインツール*))
-  * Webサイト作成ツール
   * デスクトップアプリケーション
 
 = コマンドライン
@@ -220,50 +218,6 @@
 = 話すこと
 
   * (('del:コマンドラインツール'))
-  * ((*Webサイト作成ツール*))
-  * デスクトップアプリケーション
-
-= Webサイト作成ツール
-
-  * ローカルでHTMLやCSSを生成
-    * SinatraやRailsとは違う
-  * Rubyは補助ツールとして暗躍
-    * 簡易記法をHTMLやCSSに変換
-    * テンプレートとデータの結合
-
-= Webサイト作成ツール
-
-  * 有名なのはJekyll
-  * 最近はMiddlemanが流行
-    * 様々な記法を選べる
-      * ERB, Haml, Slim, Markdown, Sass, SCSS
-    * アセットパイプライン
-      * Sprockets, Compass
-    * Padrinoのヘルパーを使える
-
-= Middleman
-
-  # image
-  # src = middleman-top.png
-  # relative_height = 98
-  # reflect_ratio = 0.1
-
-= Middleman製
-
-  # image
-  # src = chuork01-ss.png
-  # relative_height = 100
-  # reflect_ratio = 0.1
-
-== プロパティ
-
-:enable-title-on-image
-  true
-
-= 話すこと
-
-  * (('del:コマンドラインツール'))
-  * (('del:Webサイト作成ツール'))
   * ((*デスクトップアプリケーション*))
 
 = デスクトップアプリとは
