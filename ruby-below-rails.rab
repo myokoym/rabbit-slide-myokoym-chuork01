@@ -33,8 +33,7 @@
 
   # image
   # src = ruby-kaja-2013.jpg
-  # relative_width = 80
-  # reflect_ratio = 0.1
+  # relative_height = 100
 
 = 札幌の将棋事情
 
@@ -129,7 +128,6 @@ Rubyを活用できるということ
   * 違うOSで同じコードが動く
     * Rubyが動けばOK
     * 環境の差は（ほぼ）Rubyが吸収
-  * Rubyは常に変化している
 
 = 実行方法
 
@@ -186,22 +184,32 @@ Rubyを活用できるということ
   * Unixのスクリプトの一行目の(('tag:italic:((*#!*))'))
     * インタプリタのパスを指定
     * envの場合、環境変数PATHを探す
-  * shebangを書いて実行権限を付けると、そのまま実行できる
-  * 書かなくてもrubyコマンドで実行できる
+  * 書かなくてもいい
 
 = ファイルに保存して実行
 
-  * shebang書いた人
+  * shebang＋実行権限
 
       # coderay bash
       $ ./hello.rb
 
-  * shebang書かかなかった人
+  * shebangなし
 
       # coderay bash
       $ ruby hello.rb
 
-= 実用ツールの例
+= マジックコメント
+
+  * shebangがあるときは2行目に書く
+  * Ruby2.0以降はUTF-8なら省略可
+
+  # coderay ruby
+  #!/usr/bin/env ruby
+  # coding: utf-8
+
+  puts "こんにちは！"
+
+= 実用例
 
   * ファイル名を一括変更
   * ファイルごとに圧縮
@@ -231,7 +239,7 @@ Rubyを活用できるということ
 
   # image
   # src = ruby.png
-  # relative_height = 80
+  # relative_height = 100
 
 == プロパティ
 
@@ -454,17 +462,6 @@ GTK+ 3のRubyバインディング
   # image
   # src = hello-gui.png
   # relative_width = 35
-
-= Ruby :+1: :+1:
-
-  # image
-  # src = ruby.png
-  # relative_height = 90
-
-== プロパティ
-
-: enable-title-on-image
-   true
 
 = おわりに
 
