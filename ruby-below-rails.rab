@@ -44,7 +44,7 @@
   * 札幌将棋情報のブログ
     * (('note:http://blogs.yahoo.co.jp/sapporoshogijoho'))
 
-= ＼よろしくお願いします／\n\nm(_ _)m
+= よろしくお願いします。\n\nm(_ _)m
 
 = はじめに
 
@@ -235,7 +235,7 @@ Rubyを活用できるということ
     system("7z", "a", "#{name}.zip", name)
   end
 
-= Ruby :+1:
+= 生Ruby
 
   # image
   # src = ruby.png
